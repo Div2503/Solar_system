@@ -1,0 +1,106 @@
+.img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+  float: right;
+  border-radius: 10%;
+  width: 400px;
+}
+
+.img:hover {
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+video {
+  display: block;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  float: right;
+  border-radius: 65px;
+  margin-left: 20px;
+  margin-right: 10px;
+  padding-left: 10px;
+  z-index: 1;
+}
+#heading {
+  font-size: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right,#77d6c6 ,#064d69);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content {
+  position: relative;
+  flex-wrap: wrap;
+  flex: nowrap;
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  background: linear-gradient(to right,#079abe ,#08478f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-right: 10px;
+  z-index: 1;
+}
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	.dropdown-menu li{ position: relative; 	}
+	.nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{ display: block; }
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu{
+      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+  }
+}	
+/* ============ small devices .end// ============ */
+@media (max-width: 950px) {
+  .content {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .img {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 951px) {
+  @media (max-width: 1500px) {
+    .content {
+      margin-top: 30px;
+    }
+  }
+  @media (max-width: 2000px) {
+    .content {
+      margin-top: 50px;
+    }
+  }
+  @media (max-width: none) {
+    .content {
+      margin-top: 670px;
+    }
+  }
+}
