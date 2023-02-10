@@ -66,6 +66,7 @@ video {
   video {
     flex-direction: column;
     margin-top: 10px;
+    width: 400px;	  
   }
   .content {
     flex-direction: column;
