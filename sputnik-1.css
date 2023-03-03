@@ -3,26 +3,13 @@
   margin: 0;
   padding: 0;
 }
-video {
-  display: block;
-  margin: auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  float: right;
-  border-radius: 65px;
-  margin-left: 20px;
-  margin-right: 10px;
-  padding-left: 10px;
-  z-index: 1;
-}
 #heading {
   font-size: 60px;
   position: relative;
   display: flex;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to right,#a00707 ,#ce7004);
+  background: linear-gradient(to right,#09203f ,#537895);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -33,7 +20,7 @@ video {
   display: flex;
   flex-direction: column;
   font-size: larger;
-  background: linear-gradient(to right,#c52d2d ,#ca7a30);
+  background: linear-gradient(to right,#021c52 ,#044a4d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-right: 10px;
@@ -56,6 +43,21 @@ video {
 /* ============ desktop view .end// ============ */
 
 /* ============ small devices ============ */
+.img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+  float: right;
+  border-radius: 10%;
+  width: 400px;
+}
+
+.img:hover {
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  transition: 0.5s;
+}
 @media (max-width: 991px) {
   .dropdown-menu .dropdown-menu{
       margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
@@ -63,20 +65,17 @@ video {
 }	
 /* ============ small devices .end// ============ */
 @media (max-width: 950px) {
-  video {
-    flex-direction: column;
-    margin-top: 10px;
-  }
   .content {
     flex-direction: column;
     margin-top: 10px;
   }
+  .img {
+    width: 350px;
+    margin: 10px 0px 20px 0px;
+  }
 }
 @media (min-width: 951px) {
   @media (max-width: 1500px) {
-    video {
-      margin-top: 30px;
-    }
     .content {
       margin-top: 30px;
     }
@@ -85,16 +84,16 @@ video {
     .content {
       margin-top: 50px;
     }
-    video {
-      margin-top: 50px;
+    .img {
+      width: 450px;
     }
   }
   @media (max-width: none) {
     .content{
       margin-top: 670px;
     }
-    video {
-      margin-top: 70px;
+    .img {
+      width: 400px
     }
   }
 }
@@ -172,4 +171,8 @@ body{
   font-size: 20px;
   color: #644bff;
   cursor: pointer;
+}
+.text {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 450;
 }

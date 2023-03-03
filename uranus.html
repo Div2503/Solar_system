@@ -11,6 +11,7 @@
             integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
             crossorigin="anonymous">
         <link rel="stylesheet" href="uranus.css" class="css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <link rel="icon" href="logo.png" type="image/png">
     </head>
     <body>
@@ -275,15 +276,16 @@
                                 <a class="nav-link disabled">v1.0</a>
                             </li>
                         </ul>
-                        <form class="d-flex" role="search">
-                            <input
-                                class="form-control me-2"
-                                type="search"
-                                placeholder="Search"
-                                aria-label="Search">
-                            <button class="btn btn-outline-success"
-                                type="submit">Search</button>
-                        </form>
+                        <div class="wrapper">
+                            <div class="search-input">
+                              <a href="" target="_self" hidden></a>
+                              <input type="text" placeholder="Type to search..">
+                              <div class="autocom-box">
+                                <!-- here list are inserted from javascript -->
+                              </div>
+                              <div class="icon"><i class="fas fa-search"></i></div>
+                            </div>
+                          </div>
                     </div>
                 </div>
             </nav>
@@ -342,6 +344,8 @@
             integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
             crossorigin="anonymous">
   </script>
+  <script src="suggestions.js"></script>
+  <script src="script.js"></script>
   <script src="index.js"></script>
     </body>
 </html>

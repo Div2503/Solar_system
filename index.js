@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(){
   // make it as accordion for smaller screens
   if (window.innerWidth < 992) {
-  
+    const wordspacing = document.getElementById("navbarSupportedContent").childNodes["liclass"];
+    wordspacing.childNodes["mx-2"].classList.toggle("mx-1");
     // close all inner dropdowns when parent is closed
     document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
       everydropdown.addEventListener('hidden.bs.dropdown', function () {
