@@ -116,9 +116,9 @@ inputBox.onkeyup = (e)=>{
         }
         else {
             icon.onclick = ()=>{
-            webLink = `${userData}.html`;
-            linkTag.setAttribute("href", webLink);
-            linkTag.click();
+                webLink = `${userData}.html`;
+                linkTag.setAttribute("href", webLink);
+                linkTag.click();
             }
         }
         emptyArray = suggestions.filter((data)=>{
@@ -265,15 +265,10 @@ function select(element){
         }
     }
     else {
-        try {
-            icon.onclick = ()=>{
+        icon.onclick = ()=>{
             webLink = `${selectData}.html`;
             linkTag.setAttribute("href", webLink);
             linkTag.click();
-            }
-        }
-        catch(err){
-            alert("Not Found!")
         }
     }
 
