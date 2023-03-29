@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="index.css" class="css">
+    <link rel="stylesheet" href="get-started.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="index.js"></script>
+    <title>The Solar system</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="logo" width="60" height="60">
+            </a>
+            <a class="navbar-brand">The Solar System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-10 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="OurGoal.html" aria-current="page">Our Goal</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Planets
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="mercury.html">Mercury</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="venus.html">Venus</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="earth.html">Earth</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="mars.html">Mars</a>
+                            </li>
+                            <hr class="dropdown-divider">
+                            <li>
+                                <a class="dropdown-item" href="jupiter.html">Jupiter</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="saturn.html">Saturn</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="uranus.html">Uranus</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="neptune.html">Neptune</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Satellites
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item">Artificial Satellites &raquo;</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="sputnik-1.html">Sputnik-1</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="iss.html">ISS</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="gps-iir-1.html">GPS IIR-1</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="aryabhata.html">Aryabhata</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="rosat.html">ROSAT</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item">Natural Satellites &raquo;</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="moon.html">Moon</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="mns.html">Mar's natural satellites</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="jns.html">Jupiter's natural satellites</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="sns.html">Saturn's natural satellites</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="uns.html">Uranus's natural satellites</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="nns.html">Neptune's natural satellites</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="myDropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Other</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="sun.html">Sun</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item">Dwarf planets &raquo;</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="pluto.html">Pluto</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="ceres.html">Ceres</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="eris.html">Eris</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item">Comets &raquo;</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="hc.html">Halley's comet</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="hb.html">Hale-Bopp</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="tt.html">Tempel-Tuttel</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item">Asteriods &raquo;</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="vesta.html">Vesta</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="pallas.html">Pallas</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="hygiea.html">Hygiea</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item">Space probes &raquo;</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="mro.html">MRO</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="hst.html">Hubble Space Telescope</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="v1.html">Voyager-1</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="v2.html">Voyager-2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item">Rockets &raquo;</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="sv.html">Saturn V</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="sfh.html">SpaceX Falcon Heavy</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="gslv.html">GSLV</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">v1.0</a>
+                    </li>
+                </ul>
+                <div class="wrapper">
+                    <div class="search-input">
+                        <a href="" target="_self" hidden></a>
+                        <input type="text" placeholder="Type to search..">
+                        <div class="autocom-box">
+                            <!-- here list are inserted from javascript -->
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <main>
+        <span class="heading">Our Solar System</span>
+        <img src="inner_planets.jpg" alt="image" class="img">
+        <span class="mini-hdng-1">
+            Intro :
+        </span>
+        <div class="cntnt">
+            The Solar System is the gravitationally bound system of the Sun and the objects that orbit it. The vast
+            majority
+            (99.86%) of the system's mass is in the Sun (a dwarf yellow star at the center). The four inner system
+            planets—
+            Mercury, Venus, Earth and Mars are composed primarily of rock and metal. The two largest, Jupiter and
+            Saturn, are
+            gas giants, being composed mainly of hydrogen and helium; the next two, Uranus and Neptune, are ice giants,
+            being
+            composed mostly of substances such as water, ammonia, and methane.
+        </div>
+        <span class="mini-hdng-2">
+            Planets :
+        </span>
+        <img src="solar-system-gs.jpg" alt="Image" class="img-2">
+        <div class="cntnt-2">
+            The Solar System has at least eight planets: the terrestrial planets Mercury, Venus, Earth and Mars, and the
+            giant planets Jupiter, Saturn, Uranus and Neptune.
+            The word planet probably comes from the Greek planḗtai, meaning "wanderers". Ceres and other bodies later
+            recognized to be part of the asteroid belt; and Pluto,
+            later found to be the largest member of the collection of icy bodies known as the Kuiper belt. The
+            International Astronomical Union (IAU) adopted a standard by
+            which the four terrestrials and four giants qualify, placing Ceres, Pluto and Eris in the category of dwarf
+            planet. Further advances in astronomy led to the
+            discovery of over five thousand planets outside the Solar System, termed exoplanets. These include hot
+            Jupiters—giant planets that orbit close to their parent
+            stars—like 51 Pegasi b, super-Earths like Gliese 581c that have masses in between that of Earth and Neptune;
+            and planets smaller than Earth, like Kepler-20e.
+        </div>
+        <span class="mini-hdng-3">
+            The Sun :
+        </span>
+        <img src="sun.jpg" alt="image of sun" class="img-3">
+        <div class="cntnt-3">
+            The Sun is a star located at the center of our solar system. It is by far the largest object in the solar
+            system, accounting for more than 99% of the total mass of the solar system. The Sun's core is currently
+            undergoing nuclear fusion, which releases a tremendous amount of energy in the form of light and heat. The
+            Sun has a significant impact on the Earth and the rest of the solar system. Its gravity is responsible for
+            keeping the planets in their orbits, and its energy is the source of all life on Earth. For more information
+            on Sun, click the below button :
+            <br>
+            <br>
+            <button class="button-42" role="button" onclick="window.location.href='sun.html'">About Sun</button>
+        </div>
+        <span class="mini-hdng-4">
+            Other :
+        </span>
+        <img src="space-1422642.jpg" alt="picture of Asteriods" class="img-4">
+        <div class="cntnt-4">
+            Our Solar system is very vast and does not contain just the above mentioned celestial bodies. In fact, it
+            does have more such as big chunks of rocks called asteriods, Comets (made up of ice and dust) and many more.
+            There are two places where most of the asteriods have gathered together. These two places are the Asteroid
+            Belt (between Jupiter and Mars) and Kupiter Belt (After neptune and at the edge of the solar system). Out of
+            both of them, Asteriod Belt has more densly packed asteroids whereas Kupiter Belt also has a lot of
+            asteroids but they are more spread out from each othr due to the greater area available.
+            <br>
+            <br>
+            <br>
+            <div class="buttonbox">
+                <button class="button-50 text-left" role="button"
+                    onclick="window.location.href='hc.html'">Comets</button>
+                &nbsp;&nbsp;
+                <button class="button-60 text-center" role="button"
+                    onclick="window.location.href='vesta.html'">Asteroids</button>
+            </div>
+            <br>
+        </div>
+    </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="suggestions.js"></script>
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

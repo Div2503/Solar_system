@@ -1,0 +1,181 @@
+.img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+  float: right;
+  border-radius: 10%;
+  width: 400px;
+}
+
+.img:hover {
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+video {
+  display: block;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  float: right;
+  border-radius: 65px;
+  margin-left: 20px;
+  margin-right: 10px;
+  padding-left: 10px;
+  z-index: 1;
+}
+#heading {
+  font-size: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right,#77d6c6 ,#064d69);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content {
+  position: relative;
+  flex-wrap: wrap;
+  flex: nowrap;
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  background: linear-gradient(to right,#079abe ,#08478f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-right: 10px;
+  z-index: 1;
+}
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	.dropdown-menu li{ position: relative; 	}
+	.nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{ display: block; }
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu{
+      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+  }
+}	
+/* ============ small devices .end// ============ */
+@media (max-width: 950px) {
+  .content {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .img {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 951px) {
+  @media (max-width: 1500px) {
+    .content {
+      margin-top: 30px;
+    }
+  }
+  @media (max-width: 2000px) {
+    .content {
+      margin-top: 50px;
+    }
+  }
+  @media (max-width: none) {
+    .content {
+      margin-top: 670px;
+    }
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  padding: 0 20px;
+}
+::selection{
+  color: #fff;
+  background: #664AFF;
+}
+.wrapper{
+  max-width: 450px;
+}
+.wrapper .search-input{
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+.search-input input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
+}
